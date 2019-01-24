@@ -1,0 +1,29 @@
+{
+  "name": "example-image-comparison",
+  "productName": "Examples of different image comparison packages",
+  "version": "1.0.0",
+  "description": "Examples of different image comparison packages",
+  "scripts": {},
+  "repository": "https://github.com/unrealgear/example-image-comparison",
+  "keywords": [
+    "js",
+    "mocha",
+    "image",
+    "comparison",
+    "discrepancies",
+    "difference",
+    "examples",
+    "opencv",
+    "open cv",
+    "opencv4nodejs",
+    "pixelmatch",
+    "resemblejs"
+  ],
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^5.2.0",
+    "opencv4nodejs": "^4.14.0",
+    "pixelmatch": "^4.0.2",
+    "resemblejs": "^3.0.1"
+  }
+}
