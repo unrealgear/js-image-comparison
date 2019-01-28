@@ -3,7 +3,11 @@
   "productName": "Examples of different image comparison packages",
   "version": "1.0.0",
   "description": "Examples of different image comparison packages",
-  "scripts": {},
+  "scripts": {
+    "generate:resemblejs": "node src/resemblejs/example.js",
+    "generate:pixelmatch": "node src/pixelmatch/example.js",
+    "generate:opencv4nodejs": "node src/opencv4nodejs/example.js"
+  },
   "repository": "https://github.com/unrealgear/example-image-comparison",
   "keywords": [
     "js",
