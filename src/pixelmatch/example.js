@@ -14,6 +14,5 @@ function findDifferences(pathToActual, pathToExpected, nameOfResultFile) {
     // numberOfDiffs is a number, it can be logged or attached to the report
     let numberOfDiffs = pixelmatch(actual.data, expected.data, result.data, expected.width, expected.height);
 
-    // create folder 'results' or provide permissions to create folders
     result.pack().pipe(fs.createWriteStream("./results/pixelmatch/"+ nameOfResultFile + ".png"));
 }
