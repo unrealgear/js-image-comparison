@@ -1,5 +1,6 @@
 const compareImages = require("resemblejs/compareImages"),
-    fs = require("mz/fs");
+    fs = require("mz/fs"),
+    paths = require("../paths.js");
 
 const optionsForResemblejs = {
     // for examples of available options visit http://rsmbl.github.io/Resemble.js/
@@ -19,14 +20,15 @@ const optionsForResemblejs = {
     ignore: "less"
 };
 
-findDifferences('./images/windows_actual.png', './images/windows_expected.png',
-    'resemblejs-windows');
+paths.paths.forEach((it) => {
+    findDifferences(it[0], it[1], paths.pathToResults + "resemblejs/resemblejs" + it[2])
+});
 
-async function findDifferences(pathToActual, pathToExpected, nameOfResultFile) {
+async function findDifferences(pathToActual, pathToExpected, pathToResult) {
     const actual = await fs.readFile(pathToActual);
     const expected = await fs.readFile(pathToExpected);
 
     const result = await compareImages(actual, expected, optionsForResemblejs);
 
-    await fs.writeFile("./results/resemblejs/" + nameOfResultFile + ".png", result.getBuffer());
+    await fs.writeFile(pathToResult, result.getBuffer());
 }
