@@ -21,10 +21,12 @@
     "open cv",
     "opencv4nodejs",
     "pixelmatch",
-    "resemblejs"
+    "resemblejs",
+    "looks-same"
   ],
   "devDependencies": {
     "chai": "^3.4.1",
+    "looks-same": "^6.0.0",
     "mocha": "^5.2.0",
     "mz": "^2.7.0",
     "opencv4nodejs": "^4.14.0",
