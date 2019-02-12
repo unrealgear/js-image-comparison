@@ -3,6 +3,7 @@ const compareImages = require("resemblejs/compareImages"),
     paths = require("../paths.js");
 
 const optionsForResemblejs = {
+
     // for examples of available options visit http://rsmbl.github.io/Resemble.js/
     output: {
         errorColor: {
@@ -20,7 +21,7 @@ const optionsForResemblejs = {
     ignore: "less"
 };
 
-paths.paths.forEach((it) => {
+paths.imagesToCompare.forEach((it) => {
     findDifferences(it[0], it[1], paths.pathToResults + "resemblejs/resemblejs" + it[2])
 });
 

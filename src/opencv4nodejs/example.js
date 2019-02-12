@@ -1,7 +1,7 @@
 const cv = require("opencv4nodejs"),
     paths = require("../paths.js");
 
-paths.paths.forEach((it) => {
+paths.imagesToCompare.forEach((it) => {
     findDifferences(it[0], it[1], paths.pathToResults + "opencv4nodejs/opencv4nodejs" + it[2])
 });
 
