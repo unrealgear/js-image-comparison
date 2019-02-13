@@ -2,7 +2,7 @@ const fileHelper = require('./helpers/fileHelper.js');
 
 const pathToImages = "./images/";
 
-var imagesToCompare = [
+let imagesToCompare = [
     [pathToImages + "opencv4nodejs/windows_actual.png", pathToImages + "opencv4nodejs/windows_expected.png",
         "-windows.png"],
     [pathToImages + "pixelmatch/map1_actual.png", pathToImages + "pixelmatch/map1_expected.png",
