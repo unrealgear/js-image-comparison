@@ -3,8 +3,8 @@ const PNG = require("pngjs").PNG,
     pixelmatch = require("pixelmatch"),
     paths = require("../paths.js");
 
-paths.imagesToCompare.forEach((it) => {
-    findDifferences(it[0], it[1], paths.pathToResults + "pixelmatch/pixelmatch" + it[2])
+paths.imagesToCompare.forEach((pathsToImages) => {
+    findDifferences(pathsToImages[0], pathsToImages[1], paths.pathToResults + "pixelmatch/pixelmatch" + pathsToImages[2])
 });
 
 function findDifferences(pathToActual, pathToExpected, pathToResult) {

@@ -1,8 +1,8 @@
 const paths = require("../paths.js"),
     looksSame = require("looks-same");
 
-paths.imagesToCompare.forEach((it) => {
-    findDifferences(it[0], it[1], paths.pathToResults + "looks-same/looks-same" + it[2])
+paths.imagesToCompare.forEach((pathsToImages) => {
+    findDifferences(pathsToImages[0], pathsToImages[1], paths.pathToResults + "looks-same/looks-same" + pathsToImages[2])
 });
 
 async function findDifferences(pathToActual, pathToExpected, pathToResult) {
