@@ -6,6 +6,7 @@
   "scripts": {
     "generate:resemblejs": "node src/resemblejs/example.js",
     "generate:pixelmatch": "node src/pixelmatch/example.js",
+    "generate:looks-same": "node src/looks-same/example.js",
     "generate:opencv4nodejs": "node src/opencv4nodejs/example.js"
   },
   "repository": "https://github.com/unrealgear/example-image-comparison",
