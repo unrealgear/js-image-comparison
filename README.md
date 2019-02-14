@@ -1,7 +1,7 @@
 # js-image-comaprison
 
-Examples of using [Resemble.js](https://github.com/rsmbl/Resemble.js), [pixelmatch](https://github.com/mapbox/pixelmatch) 
-and [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs/) for pixel-to-pixel image comparison.
+Examples of using [Resemble.js](https://github.com/rsmbl/Resemble.js), [pixelmatch](https://github.com/mapbox/pixelmatch), 
+[looks-same](https://github.com/gemini-testing/looks-same) and [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs/) for pixel-to-pixel image comparison.
 
 ## Prerequisites
 
@@ -47,12 +47,15 @@ Install dependencies by running (installation will take some time as OpenCV for 
 npm install
 ```
 
-There are 3 main commands available:
+There are 4 main commands available:
 ```
 npm generate:resemblejs
 ```
 ```
 npm generate:pixelmatch
+```
+```
+npm generate:looks-same
 ```
 ```
 npm generate:opencv4nodejs
@@ -79,6 +82,11 @@ which generated the file.
 [GitHub repository](https://github.com/mapbox/pixelmatch)  
 [Link to npm](https://www.npmjs.com/package/pixelmatch)  
 [Official examples](https://github.com/mapbox/pixelmatch/tree/master/test)  
+
+### looks-same
+[GitHub repository](https://github.com/gemini-testing/looks-same)
+[Link to npm](https://www.npmjs.com/package/pixelmatch)  
+[Official examples](https://github.com/gemini-testing/looks-same/blob/master/test/test.js)
 
 #### opencv4nodejs
 
